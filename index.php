@@ -1,16 +1,17 @@
 <?php
 /*
- * Prosty Kalkulator
- * Funkcje:
- * add - dodawanie
- * substract - odejmowanie
- * multiply - mno¿enie
- * divide - dzielenie
- * exponent - potêgowanie
- * square_root - pierwiastkowanie
- * getHistory - wyœwietlenie historii operacji
+ * Simple Calculator
+ * Functions:
+ * add
+ * substract
+ * multiply
+ * divide
+ * exponent
+ * square_root
+ * getHistory
  */
-include 'Calculator.php';
+include 'src/Calculator.php';
+use JonaszKala\Kalkulator;
 
 $calc = new Calculator();
 echo PHP_EOL;
