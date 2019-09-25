@@ -11,8 +11,8 @@
  * getHistory
  */
 include 'src/Calculator.php';
-use JonaszKala\Kalkulator;
+use JonaszKala\Kalkulator\Calculator;
 
-$calc = new Calculator();
+$calc = new Calculator(0);
 echo PHP_EOL;
 var_dump ($calc->getHistory());
