@@ -7,7 +7,7 @@
  * multiply
  * divide
  * exponent
- * square_root
+ * squareRoot
  * getHistory
  */
 include 'src/Calculator.php';
