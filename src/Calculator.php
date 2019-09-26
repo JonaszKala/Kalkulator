@@ -7,19 +7,25 @@ namespace JonaszKala\Kalkulator;
  */
 class Calculator
 {
-    /**
-     * @var type  Variables.
-     */
     
+    /**
+     * Numeric value used in calculator operations.
+     *
+     * @var float
+     */
     private $value;
     
+    /**
+     * Used to keep track of performed operations.
+     *
+     * @var string
+     */
     private $history;
     
     /**
      * Serves constructing new object instances.
      *
-     * @param float $value
-     * Starting value.
+     * @param float $value Starting value.
      *
      * @return float
      */
@@ -32,8 +38,7 @@ class Calculator
     /**
      * Serves adding.
      *
-     * @param float $addend
-     * Value to be added.
+     * @param float $addend Value to be added.
      *
      * @return float
      */
@@ -47,8 +52,7 @@ class Calculator
     /**
      * Serves substracting.
      *
-     * @param float $subtrahend
-     * Value to be substracted.
+     * @param float $subtrahend Value to be substracted.
      *
      * @return float
      */
@@ -62,8 +66,7 @@ class Calculator
     /**
      * Serves multiplying.
      *
-     * @param float $multiplier
-     * Value to be multiplied with.
+     * @param float $multiplier Value to be multiplied with.
      *
      * @return float
      */
@@ -77,8 +80,7 @@ class Calculator
     /**
      * Serves dividing.
      *
-     * @param float $divider
-     * Value to be divided by.
+     * @param float $divider Value to be divided by.
      *
      * @return float
      */
@@ -92,12 +94,11 @@ class Calculator
     /**
      * Serves exponenting.
      *
-     * @param integer $exp
-     * Value used as an exponent.
+     * @param integer $exp Value used as an exponent.
      *
      * @return float
      */
-    public function exponent(int $exp)
+    public function exponent(int $exp) : float
     {
         $this->value     = pow($this->value, $exp);
         $this->history[] = 'Exponented with power of' . $exp;
@@ -107,8 +108,7 @@ class Calculator
     /**
      * Serves square rooting.
      *
-     * @param float $this->value
-     * Value will be square rooted.
+     * @param float $this->value Value will be square rooted.
      *
      * @return float
      */
@@ -122,7 +122,7 @@ class Calculator
     /**
      * Serves viewing history of operations.
      *
-     * @param string $this->history
+     * @param string $this->history History of operations will be shown.
      *
      * @return string
      */
